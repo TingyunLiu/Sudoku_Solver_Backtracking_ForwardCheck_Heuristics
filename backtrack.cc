@@ -129,7 +129,6 @@ bool Backtrack::cause_unsolvable() {
 // Function to print the final Sudoku states and total number of variable assignment
 //******************************************************************************************
 void Backtrack::print_grid() {
-/*
 	for (int i = 0; i < GRID_SIZE; i++) {
 		for (int j = 0; j < GRID_SIZE; j++) {
 			cout << grid[i][j] << " ";
@@ -137,7 +136,5 @@ void Backtrack::print_grid() {
 		cout << endl;
 	} // for
 	cout << "Total number of assignment: " << total_number_of_assignment << endl;
-*/
-cout << total_number_of_assignment << endl;
 }
 

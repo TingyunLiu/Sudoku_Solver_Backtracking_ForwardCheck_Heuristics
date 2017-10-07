@@ -1,0 +1,30 @@
+#!/bin/bash
+
+make
+
+rm results.txt
+
+sum=0
+count=0
+
+for directory in `ls -v ./problems/`
+do
+	#echo -n $directory >> results.txt
+	#echo -n " " >> results.txt
+
+	for file in ./problems/"$directory"/*
+	do
+
+		output=$(./sudoku $file)
+	#	echo -n $output >> results.txt
+	#	echo -n " " >> results.txt
+  		
+  		sum=$((sum+output))
+		((count++))
+	done
+	
+	echo $((sum/count)) >> results.txt
+
+	count=0
+	sum=0
+done 

@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
         } // for
     } // for
 
-/*  
+
     Backtrack bk(grid);                         // For standard Backtracking search
 
     if (bk.solve()) {
@@ -65,7 +65,7 @@ int main(int argc, char *argv[]) {
     } else {
         cout << "Cannot solve it" << endl;
     } // if
-*/ 
+
     BacktrackForwardcheckHeuristics bkfch(grid);// For Backtracking + Forward Checking + Heuristics
 
     if (bkfch.solve()) {
